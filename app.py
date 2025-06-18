@@ -17,7 +17,14 @@ import pickle
 with open('model.pkl','rb') as f:
   model = pickle.load(f)
 
-st.title("STOCK PREDICITION")
+col1, col2 = st.columns([1, 2])  # Adjust width ratio
+
+with col1:
+    st.image("stock_image.jpg", width=100)  # or use a URL
+
+with col2:
+    st.title("STOCK PREDICTION")
+
 st.subheader('Enter the details below to predict the tommorow opening price of **Jubliant Foodworks Limited**')
 volume=st.number_input('Enter the todays Volume')
 high=st.number_input('Enter the todays High')
