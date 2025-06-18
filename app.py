@@ -20,7 +20,7 @@ with open('model.pkl','rb') as f:
 col1, col2 = st.columns([1, 10])  # Adjust width ratio
 
 with col1:
-    st.image("stock_image.jpg", width=100)  # or use a URL
+    st.image("stock_image.jpg", width=150)  # or use a URL
 
 with col2:
     st.title("STOCK PREDICTION")
