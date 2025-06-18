@@ -18,7 +18,7 @@ with open('model.pkl','rb') as f:
   model = pickle.load(f)
 
 st.title("STOCK PREDICITION")
-st.markdown('Enter the details below to predict the tommorow opening price of **Jubliant Foodworks Limited**')
+st.subheader('Enter the details below to predict the tommorow opening price of **Jubliant Foodworks Limited**')
 volume=st.number_input('Enter the todays Volume')
 high=st.number_input('Enter the todays High')
 low=st.number_input('Enter the todays Low')
