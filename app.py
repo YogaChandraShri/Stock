@@ -22,9 +22,9 @@ st.markdown('Enter the details below to predict the tommorow opening price of Ju
 volume=st.number_input('Enter the todays Volume')
 high=st.number_input('Enter the todays High')
 low=st.number_input('Enter the todays Low')
-o=st.number_input('Enter the todays Open')
-
+open=st.number_input('Enter the todays Open Price')
+close=st.number_input('Enter the todays Closing Price')
 if st.button("PREDICT"):
-  data=np.array([[volume,high,low,o]])
+  data=np.array([[volume,high,low,close,open]])
   ans=model.predict(data)
 st.success("The predicted opening price is",ans[0])
