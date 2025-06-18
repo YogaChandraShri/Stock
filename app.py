@@ -27,4 +27,4 @@ close=st.number_input('Enter the todays Closing Price')
 if st.button("PREDICT"):
   data=np.array([[volume,high,low,close,open]])
   ans=model.predict(data)
-st.success("The predicted opening price is",ans[0])
+  st.success("The predicted opening price is",ans[0])
