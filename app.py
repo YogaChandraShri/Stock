@@ -27,4 +27,4 @@ o=st.number_input('Enter the todays Open')
 if st.button("PREDICT"):
   data=np.array([[volume,high,low,o]])
   ans=model.predict(data)
-  st.success("The predicted opening price is",ans[0])
+st.success("The predicted opening price is",ans[0])
